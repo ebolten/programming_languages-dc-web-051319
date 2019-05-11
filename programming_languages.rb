@@ -41,8 +41,13 @@ def reformat_languages(languages)
   languages.each do |key,value|
     value.each do |language, info|
       newHash[value] = language
+      info.each do |type, style|
+        newHash[language] = {}
+        newHash[type] = []
+        newHash[style] = []
+      end
+    end
   end
-end
 end
 
 
