@@ -40,7 +40,9 @@ def reformat_languages(languages)
   languages.each do |style,language|
     language.each do |name, info|
       newHash[name] ||= info
-      newHash[name][:style] = []
+      if newHash[name][:style] == nil
+        newHash[name][:style] = []
+      end
       newHash[name][:style] << style
 
     end
