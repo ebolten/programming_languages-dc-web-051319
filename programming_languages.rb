@@ -40,7 +40,7 @@ def reformat_languages(languages)
 
   languages.each do |key,value|
     value.each do |language, info|
-      newHash[key] = language
+      newHash[value] = language
   end
 end
 end
