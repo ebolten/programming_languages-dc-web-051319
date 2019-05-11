@@ -40,8 +40,8 @@ def reformat_languages(languages)
   languages.each do |style,language|
     language.each do |name, info|
       newHash[name] ||= info
-      newHash[name][:style]=[]
-      newHash[name][:style]<<style
+      newHash[name][:style] = []
+      newHash[name][:style] << style
 
     end
   end
