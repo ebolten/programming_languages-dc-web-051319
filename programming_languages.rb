@@ -43,6 +43,7 @@ def reformat_languages(languages)
       newHash[key] = language
   end
 end
+end
 
 
 
