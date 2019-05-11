@@ -45,7 +45,9 @@ def reformat_languages(languages)
 
     end
   end
+  return newHash
 end
+
 
 
 
