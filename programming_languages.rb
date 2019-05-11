@@ -35,4 +35,23 @@ languages = {
 
 def reformat_languages(languages)
   # your code here
+
+  newHash = {}
+
+  languages.each do |style, language, type|
+    newHash << language
+    newHash[language] => {}
+    newHash[language] << type => []
+    newHash[language] << style => []
 end
+
+
+
+
+
+
+
+
+
+
+#hi
