@@ -34,6 +34,20 @@ languages = {
 =end
 
 def reformat_languages(languages)
+  # your code here
+  newHash = {}
+
+  languages.each do |style,language|
+    language.each do |name, info|
+      newHash[name] ||= info
+      newHash[name][:style]=[]
+      newHash[name][:style] << style
+
+    end
+  end
+end
+
+def reformat_languages(languages)
 new_languages = {}
 languages.each do |style, language|
   language.each do |name, attributes|
