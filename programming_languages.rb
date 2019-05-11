@@ -39,15 +39,25 @@ def reformat_languages(languages)
 
   languages.each do |style,language|
     language.each do |name, info|
-      newHash[name] ||= info
+      newHash[name] ||= attributes
       newHash[name][:style]=[]
-      newHash[name][:style] << style
+      newHash[name][:style]<<style
 
     end
   end
 end
 
-
+def reformat_languages(languages)
+new_languages = {}
+languages.each do |style, language|
+  language.each do |name, attributes|
+  new_languages[name] ||= attributes
+  new_languages[name][:style]=[]
+  new_languages[name][:style]<<style
+end
+end
+new_languages
+end
 
 
 
