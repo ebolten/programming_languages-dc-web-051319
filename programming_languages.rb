@@ -43,6 +43,7 @@ def reformat_languages(languages)
     newHash[language] = {}
     newHash[language[0]] = type => []
     newHash[language[1]] = style => []
+  end
 end
 
 
