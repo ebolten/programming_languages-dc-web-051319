@@ -41,8 +41,8 @@ def reformat_languages(languages)
   languages.each do |style, language, type|
     newHash << language
     newHash[language] => {}
-    newHash[language] << type => []
-    newHash[language] << style => []
+    newHash[language[0]] = type => []
+    newHash[language[1]] = style => []
 end
 
 
